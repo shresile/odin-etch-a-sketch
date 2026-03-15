@@ -11,7 +11,7 @@ let squares = document.querySelectorAll(".square");
 //add event listeners, when a square is hovered(mouseover)
 squares.forEach(square => {
     square.addEventListener("mouseover",(e) => {
-        e.target.classList.add("hover");
+            e.target.style.backgroundColor =getRandomColor(); 
     });
 });
 
@@ -48,10 +48,9 @@ renewButton.addEventListener("click",()=>{
         //add event listeners, when a new square is hovered(mouseover)
         newSquares.forEach(square => {
             square.addEventListener("mouseover",(e) => {
-                e.target.classList.add("hover");
+            e.target.style.backgroundColor = getRandomColor();            
             });
         });
-
 
 
         
@@ -61,3 +60,10 @@ renewButton.addEventListener("click",()=>{
     
 
 });
+
+function getRandomColor (){
+    let R = Math.floor(Math.random() * 256);
+    let G = Math.floor(Math.random() * 256);
+    let B = Math.floor(Math.random() * 256);
+    return "rgb(" + R + "," + G + "," + B + ")";  
+}
