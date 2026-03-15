@@ -21,3 +21,19 @@
 .hover {
     background-color: blueviolet;
 }
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#renewButton {
+    margin: 50px;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px 10px;
+    border-radius: 12px;
+    
+}

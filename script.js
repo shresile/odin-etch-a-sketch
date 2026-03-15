@@ -14,3 +14,24 @@ squares.forEach(square => {
         e.target.classList.add("hover");
     });
 });
+
+const renewButton = document.querySelector("#renewButton");
+renewButton.addEventListener("click",()=>{
+    let numPerSide = Number(prompt
+        ("Enter a number not greater than 100 for squares per side:"));
+    if (numPerSide == 0 || isNaN(numPerSide)){
+        console.log(`error:${numPerSide}`);
+    } else if (numPerSide > 100) {
+        console.log("error: number is greater than 100!")
+    }else {
+        console.log(numPerSide);
+        squares.forEach(square => {
+            container.removeChild(square);
+        })
+        
+    }
+
+    
+    
+
+});
