@@ -37,3 +37,10 @@ body {
     border-radius: 12px;
     
 }
+
+.newSquare {
+    border-width: 1px;
+    border-color: brown;
+    border-style: solid;
+    box-sizing: border-box;
+}
